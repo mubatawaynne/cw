@@ -1,0 +1,37 @@
+<div class="landing-banner-section">
+
+  
+    <div class="banner-top">
+        <div class="banner-top-left">
+            <img width="100" src="/src/assets/img/slide1.jpg">
+        </div>
+        <div class="banner-top-right">
+            <div class="search-container"></div>
+            <div class="phone-container">
+           
+                0242 779 156</div>
+        </div>
+    </div>
+    <div class="banner-bottom">
+        <div class="banner-section-bottom-left">
+            <div class="category-dropdown">Categories</div>
+        </div>
+        <div class="banner-section-bottom-right">
+            <div class="banner-section-menu">
+                <div class="banner-menu-item" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</div>
+                <div class="banner-menu-item" [routerLink]="['/products']" routerLinkActive="router-link-active" >Shop</div>
+                <div class="banner-menu-item" [routerLink]="['/services']" routerLinkActive="router-link-active" >Services</div>
+                <div class="banner-menu-item" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</div>
+                  
+                
+            </div>
+            <div class="banner-heading1">Promo h1</div>
+            <div class="banner-heading2">Promo h2</div>
+            <div class="banner-heading3">promo h3</div>
+            <div class="banner-action">Get Quote!</div>
+        </div>
+    </div>
+    <div *ngIf="show_slider"  [@fadeInOnEnter] [@fadeOutOnLeave] class="slider-img-container">
+        <img class="slider-img"  [src]='imgs[current_index]'>
+    </div>
+</div>

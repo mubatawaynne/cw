@@ -1,1 +1,324 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~mapbox-gl/dist/mapbox-gl.css";
+@import "~@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css";
+
+*:focus{
+    border: none !important;
+    outline: none !important;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*----------Navigation--------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand
+{
+    height: 56px;
+    color: #555!important;
+}
+.navbar-nav li 
+{
+    padding: 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left; 
+}
+#nav-bar ul li a:hover
+{
+    color:lightseagreen!important;
+}
+.navbar
+{
+    background: #fff;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.img-logo{
+    height: 80px;
+    width: 80px
+}
+/*-------Slider-------*/
+
+    .swiper-container
+    {
+        height: 400px;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 5rem;
+        border: 1px solid teal;
+        object-fit: contain ;
+    }
+    
+.slider{
+    height: 400px;
+    width: 100%; 
+}
+
+/*-----------------------About---------------------*/
+.stubborn
+{ 
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./assets/img/services.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color:white!important; 
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#about .btn
+{
+    margin-top: 20px;
+}
+.about-content
+{
+    padding-bottom: 20px;
+    color: grey;
+}
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 20px;  
+    color:grey   
+}
+#about h1 
+{
+    color: white;
+}
+
+/*-----------------------Services---------------------*/
+#services
+{
+    background: #DCDCDC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:grey;
+}
+#services h1
+{
+    text-align: center;
+    color:grey !important;
+    padding-bottom: 10px;
+}
+#services h1
+{
+    text-align: center;
+    color: white !important;
+    padding-bottom: 10px;
+}
+#services h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+}
+#services p
+{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+  
+}
+.services .col-md-3:hover{
+    background: #DCDCDC;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*--------------Blog----------------*/
+#blog
+{
+    background: #DCDCDC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+h1
+{
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+h1::after
+{
+    content:'';
+    background: #B0C4DE;
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto 5px;
+}
+.education
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+   
+   
+}
+#education p
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #555;
+}
+.education .col-md-4:hover{
+    background: #B0C4DE;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.g-image{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*-----------------promo---------------*/
+#promo
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./assets/img/promo.jpg');
+    /* background-size: cover; */
+    color: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+/*--------------Request Quote-------------*/
+#requestquote
+{
+    padding: 40px 0;
+    background: #efefef;
+        color: #555;
+}
+#requestquote
+{
+    background: #DCDCDC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #555;
+}
+.contact-form
+{
+    padding: 15px;
+   
+}
+::placeholder
+{
+    color: #999 !important;
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+
+}
+/*---------------------------Get In Touch------------------------*/
+#contact
+{
+    background: #DCDCDC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #555;
+}
+
+
+::placeholder
+{
+    color: #999 !important;
+}
+.follow
+{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+
+
+
+/*---------------------------footer------------------------*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+}
+
+
+
+@media screen and (max-width:480px){
+    .banner-container{
+        font-size: 2rem; 
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./assets/img/mobile-banner.jpg');
+        
+    }
+
+    #promo
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./assets/img/mobile-banner.jpg');
+        
+    }
+    .stubborn
+    {
+
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./assets/img/mobile-banner.jpg');
+    
+    }
+}
