@@ -22,7 +22,7 @@ export class AppComponent {
 
   phone;
 
-  data =  {"sender":{"name":"Waynne Mubata","email":"mubatawaynne@yahoo.com"},
+  data =  {"sender":{"name":"ClearWater","email":"mubatawaynne@yahoo.com"},
   "to":[{"email":"mubatawaynne@gmail.com","name":"waynne"}],
   "textContent":"this is my the message from angular","subject":"enquiry"}
 

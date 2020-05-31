@@ -12,6 +12,10 @@
     padding: 0px;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /*----------Navigation--------*/
 #nav-bar
@@ -118,7 +122,7 @@
 /*-----------------------Services---------------------*/
 #services
 {
-    background: #DCDCDC;
+    background: #dedede;
     padding-top: 50px;
     padding-bottom: 50px;
     color:grey;
@@ -157,6 +161,9 @@
     width: 80px;
     border: 1px solid white;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     
 }
 #services p
@@ -167,14 +174,14 @@
   
 }
 .services .col-md-3:hover{
-    background: #DCDCDC;
+    background: #dedede;
     cursor: pointer;
     transition: 0.7s;
 }
 /*--------------Blog----------------*/
 #blog
 {
-    background: #DCDCDC;
+    background: #dedede;
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
@@ -216,11 +223,11 @@ h1::after
     margin-top: 20px;
     color: #555;
 }
-.education .col-md-4:hover{
+/* .education .col-md-4:hover{
     background: #B0C4DE;
     cursor: pointer;
     transition: 0.7s;
-}
+} */
 
 .g-image{
     height: 300px;
@@ -249,7 +256,7 @@ h1::after
 }
 #requestquote
 {
-    background: #DCDCDC;
+    background: #dedede;
     padding-top: 40px;
     padding-bottom: 40px;
     color: #555;
@@ -273,7 +280,7 @@ h1::after
 /*---------------------------Get In Touch------------------------*/
 #contact
 {
-    background: #DCDCDC;
+    background: #dedede;
     padding-top: 40px;
     padding-bottom: 40px;
     color: #555;
@@ -313,12 +320,13 @@ h1::after
     #promo
     {
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./assets/img/mobile-banner.jpg');
-        
+        background-position: fixed;
+        background-size: contain;
     }
     .stubborn
     {
-
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./assets/img/mobile-banner.jpg');
-    
+        background-size: contain;
+        background-position: fixed;
     }
 }

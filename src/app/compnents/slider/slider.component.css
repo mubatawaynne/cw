@@ -1,19 +1,19 @@
 .landing-banner-section{
-    height: 475px;
+    height: 430px;
     background-color: #aaa;
     padding: 0px 44px;
 }
 
 .banner-top{
     height: 100px;
-    border:1px solid black;
+    /* border:1px solid black; */
     display: flex;
     align-items: center;
 
 }
 .banner-top-left{
     /* background-color: #FF5435; */
-    width: 280px;
+    width: 180px;
     height: 100%;
     padding:0px 32px 0px 0px;
 }
@@ -47,7 +47,7 @@
 
 
 .banner-section-bottom-left{
-    width: 280px;
+    width: 180px;
     height: 100%;
     /* border: 1px solid hotpink; */
     padding:0px 32px 0px 0px;
@@ -80,37 +80,70 @@
 }
 
 .banner-heading1{
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     font-weight: 600;
     color: white;
     margin-left: 28px;
 }
 
 .banner-heading2{
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: white;
     margin-left: 28px;
 }
 
 
 .banner-heading3{
-    font-size: 1.5rem;
-    color:  #335F8A;
+    font-size: 2.3rem;
+    color:  rgb(39, 128, 216);
     margin-left: 28px;
 }
 .banner-action{
     width: 220px;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 6px;
-    height: 44px;
+    height: 56px;
     font-size: 32px;
     text-align: center;
     box-shadow: 1px 1px 8px #222;
     margin-top: 8px;
     margin-left: 28px;
     cursor: pointer;
+    background-color: rgb(39, 128, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+.landing-banner-section{
+    position:relative;
+}
+.slider-img-container{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    /* border: 1px solid yellow; */
+}
+.slider-img{
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter:grayscale;
+    filter:brightness(50%);
+    -webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
+    -webkit-filter: brightness(50%);
+}
+.banner-top{
+    position: relative;
+    z-index:5
+}
+.banner-bottom{
+    position: relative;
+    z-index:5
+}
 .landing-banner-section{
     position:relative;
 }
@@ -129,9 +162,56 @@
 }
 .banner-top{
     position: relative;
-    z-index:50
+    z-index:5;
+
 }
+
 .banner-bottom{
     position: relative;
-    z-index:50
+    z-index:5
 }
+
+@media screen and (max-width:480px){
+    .phone-container{
+      display:none
+    }
+    .banner-section-bottom-left{
+        display: none;
+    }
+
+    .slider-img{
+        height: 100%;
+        object-fit: center;
+       
+    }
+    .banner-top{
+        position: relative;
+        z-index:5;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+        height:56px
+    }
+
+    .banner-heading1{
+        font-size: 3rem;
+        font-weight: 600;
+        color: white;
+        margin-left: 28px;
+    }
+    
+    .banner-heading2{
+        font-size: 2.6rem;
+        color: white;
+        margin-left: 28px;
+    }
+    
+    
+    .banner-heading3{
+        font-size: 2rem;
+        color:  rgb(39, 128, 216);
+        margin-left: 28px;
+    }
+}
+
+
+

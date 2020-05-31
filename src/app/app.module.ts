@@ -7,13 +7,15 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderComponent } from './compnents/slider/slider.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SliderComponent
+    SliderComponent,
+    GalleryComponent
   ],
   imports: [
     NgxMapboxGLModule.withConfig({
